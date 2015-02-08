@@ -1,0 +1,429 @@
+{
+    "project": {
+        "name": "repeating-texture",
+        "description": "This GameObject is used to render a single cell of a TextureAtlas multiple times over an area. Good for use as Repeating Backgrounds.",
+        "version": "1.0.0",
+        "url": "http://kiwijs.org/"
+    },
+    "files": {
+        "src/repeating-texture-1.0.0.js": {
+            "name": "src/repeating-texture-1.0.0.js",
+            "modules": {
+                "Plugins": 1
+            },
+            "classes": {
+                "Kiwi.Plugins.RepeatingTexture": 1,
+                "Kiwi.Plugins.GameObjects.RepeatingTexture": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Kiwi.Plugins": 1,
+                "Kiwi.Plugins.GameObjects": 1
+            }
+        }
+    },
+    "modules": {
+        "Kiwi": {
+            "name": "Kiwi",
+            "submodules": {
+                "Plugins": 1
+            },
+            "classes": {
+                "Kiwi.Plugins.RepeatingTexture": 1,
+                "Kiwi.Plugins.GameObjects.RepeatingTexture": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Kiwi.Plugins": 1,
+                "Kiwi.Plugins.GameObjects": 1
+            },
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 34
+        },
+        "Plugins": {
+            "name": "Plugins",
+            "submodules": {},
+            "classes": {
+                "Kiwi.Plugins.RepeatingTexture": 1,
+                "Kiwi.Plugins.GameObjects.RepeatingTexture": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {
+                "Kiwi.Plugins": 1,
+                "Kiwi.Plugins.GameObjects": 1
+            },
+            "module": "Kiwi",
+            "namespace": "",
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 34,
+            "description": "A Object that outlines the information related to this Repeating Texture Plugin. Aka the name and version of it."
+        }
+    },
+    "classes": {
+        "Kiwi.Plugins.RepeatingTexture": {
+            "name": "Kiwi.Plugins.RepeatingTexture",
+            "shortname": "Kiwi.Plugins.RepeatingTexture",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins",
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 1,
+            "description": "A Object that outlines the information related to this Repeating Texture Plugin. Aka the name and version of it."
+        },
+        "Kiwi.Plugins.GameObjects.RepeatingTexture": {
+            "name": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "shortname": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects",
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 34,
+            "extends": "Entity",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "state",
+                    "description": "The State that this gameobject belongs to.",
+                    "type": "State"
+                },
+                {
+                    "name": "atlas",
+                    "description": "The spritesheet or textureatlas that holds the font.",
+                    "type": "TextureAtlas|SpriteSheet"
+                },
+                {
+                    "name": "x",
+                    "description": "The gameobjects coordinates on the x-axis.",
+                    "type": "Number",
+                    "optional": true,
+                    "optdefault": "0"
+                },
+                {
+                    "name": "y",
+                    "description": "The gameobjects coordinates on the y-axis.",
+                    "type": "Number",
+                    "optional": true,
+                    "optdefault": "0"
+                },
+                {
+                    "name": "width",
+                    "description": "How wide of an area the Object should cover. Note: Does not take affect if locked to a camera. If not passed will be as wide as the first cell in the TextureAtlas.",
+                    "type": "Number",
+                    "optional": true
+                },
+                {
+                    "name": "height",
+                    "description": "How high of an area the Object should cover. Note: Does not take affect if locked to a camera. If not passed will be as wide as the first cell in the TextureAtlas.",
+                    "type": "Number",
+                    "optional": true
+                }
+            ]
+        }
+    },
+    "classitems": [
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 10,
+            "description": "The name of this plugin.",
+            "itemtype": "property",
+            "name": "name",
+            "default": "'RepeatingTexture'",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 17,
+            "description": "The version of this plugin.",
+            "itemtype": "property",
+            "name": "version",
+            "default": "'1.0.0'",
+            "class": "Kiwi.Plugins.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 52,
+            "description": "The texture atlas holds the image that will be used for rendering.",
+            "itemtype": "property",
+            "name": "atlas",
+            "type": "TextureAtlas",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 60,
+            "description": "The camera that the repeating background should be 'locked' to. This is an INTERNAL property, use the 'camera' getters/setters for actual implementation",
+            "itemtype": "property",
+            "name": "_camera",
+            "type": "Camera",
+            "access": "private",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 68,
+            "description": "Indicates whether or not this GameObject is currently 'locked' onto a camera or not. This property is READ ONLY.",
+            "itemtype": "property",
+            "name": "lockedToCamera",
+            "type": "Boolean",
+            "default": "false",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 77,
+            "description": "Whether the graphic should be rendered in repetition on the X axis.",
+            "itemtype": "property",
+            "name": "repeatX",
+            "type": "Boolean",
+            "default": "true",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 86,
+            "description": "Whether the graphic should be rendered in repetition on the y axis.",
+            "itemtype": "property",
+            "name": "repeatY",
+            "type": "Boolean",
+            "default": "true",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 95,
+            "description": "The Offset, is a how far away from the regular x/y coordinates the rendering should take place. \nThis work regardless of if it is locked to a camera or not.",
+            "itemtype": "property",
+            "name": "_offset",
+            "type": "Point",
+            "access": "private",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 104,
+            "description": "The cell offset is how far away the first image (when rendering) should be away from the top/left coordinate (normal x/y + offset x/y).\nSee the paralax/stars examples for more information.",
+            "itemtype": "property",
+            "name": "_cellOffset",
+            "type": "Point",
+            "access": "private",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 139,
+            "description": "The type of object this is.",
+            "itemtype": "method",
+            "name": "objType",
+            "type": "String",
+            "access": "public",
+            "tagname": "",
+            "default": "'RepeatingTexture'",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 151,
+            "description": "The camera that the repeating background is 'locked' to.\nIf you are wanting to remove the object from being 'locked' to the camera then set this to 'null' or 'false'.",
+            "itemtype": "property",
+            "name": "camera",
+            "type": "Camera",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 182,
+            "description": "How wide of an area the Object should cover. \nNote: If locked to a camera, then the width rendered will be that of the camera this is locked to. \nYou can still set the width if should take up afterwards if you want though.",
+            "itemtype": "property",
+            "name": "width",
+            "type": "number",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 210,
+            "description": "How high of an area the Object should cover. \nNote: If locked to a camera, then the height rendered will be that of the camera this is locked to. \nYou can still set the height if should take up afterwards if you want though.",
+            "itemtype": "property",
+            "name": "height",
+            "type": "number",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 238,
+            "description": "The cell offset X is how far away the first image (when rendering) should be away from the left coordinate (normal x + offset x).\nThe cell offset X is how far away the first image (when rendering) should be away from the left coordinate (normal x + offset x).\nSee the paralax/stars examples for more information.",
+            "itemtype": "property",
+            "name": "cellOffsetX",
+            "type": "number",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 259,
+            "description": "The cell offset Y is how far away the first image (when rendering) should be away from the left coordinate (normal y + offset y).\nSee the paralax/stars examples for more information.",
+            "itemtype": "property",
+            "name": "cellOffsetY",
+            "type": "number",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 279,
+            "description": "The Offset, is a how far away from the regular x coordinates the rendering should take place. \nThis will work regardless of if it is locked to a camera or not.",
+            "itemtype": "property",
+            "name": "offsetX",
+            "type": "Number",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 299,
+            "description": "The Offset, is a how far away from the regular y coordinates the rendering should take place. \nThis will work regardless of if it is locked to a camera or not.",
+            "itemtype": "property",
+            "name": "offsetY",
+            "type": "Number",
+            "access": "private",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 319,
+            "description": "The update loop that is executed every frame.",
+            "itemtype": "method",
+            "name": "update",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 337,
+            "description": "The method that controls how this object is rendered when using the CANVAS renderer.",
+            "itemtype": "method",
+            "name": "render",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 389,
+            "description": "This method is used across renderers to calculate the coordinates for all of the points on the ap",
+            "itemtype": "method",
+            "name": "calculateCoordinates",
+            "access": "private",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        },
+        {
+            "file": "src/repeating-texture-1.0.0.js",
+            "line": 462,
+            "description": "Controls the rendering of this gameobject on WebGL.",
+            "itemtype": "method",
+            "name": "renderGL",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.GameObjects.RepeatingTexture",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.GameObjects"
+        }
+    ],
+    "warnings": []
+}
